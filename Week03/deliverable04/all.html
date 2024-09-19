@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="alls.css">
+  <title>Deliverable 04B - Putting it all together</title>
+</head>
+<body>
+  <form>
+    <p>
+      <fieldset>
+        <legend>Do you have a driver's license?<span aria-label="required">*</span></legend>
+        <input type="radio" id="r1" name="r" value="yes" required><label for="r1">Yes</label>
+        <input type="radio" id="r2" name="r" value="no" required><label for="r2">No</label>
+      </fieldset>
+    </p>
+    <p>
+      <label for="n1">How old are you?</label>
+      <input type="number" id="n1" name="age" pattern="\d+" min="16" max="80" step="2">
+    </p>
+    <p>
+      <label for="t1">What's your favorite fruit?<span aria-label="required">*</span></label>
+      <input type="text" id="t1" name="fruit" list="l1"
+             pattern="Banana|Cherry|Apple|Strawberry|Lemon|Orange" required>
+    </p>
+    <p>
+      <label for="t2">What's your email address?</label>
+      <input type="email" id="t2" name="email" required>
+    </p>
+    <p>
+      <label for="t3">Leave a short message</label>
+      <textarea id="t3" name="msg" maxlength="140" rows="10"></textarea>
+    </p>
+    <p>
+      <button>Submit</button>
+    </p>
+  </form>
+</body>
+</html>
